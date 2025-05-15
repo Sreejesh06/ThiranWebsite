@@ -67,10 +67,11 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
           backgroundImage: "url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
-          filter: "blur(3px)"
+          filter: "blur(3px) brightness(0.4)"
         }}
       ></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/50 to-primary/90 dark:from-[#1E1E24]/70 dark:to-[#1E1E24]/90 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/95 to-black z-0"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(20,230,245,0.05)_0%,rgba(20,230,245,0)_70%)] z-0"></div>
       
       {/* Particles effect */}
       <div className="absolute inset-0 z-[1]">
@@ -86,7 +87,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-primary neon-text">THIRAN</span> <span className="text-accent neon-text">2026</span>
+              <span className="text-primary neon-text">THIRAN</span> <span className="text-accent neon-text-pink">2026</span>
             </motion.h1>
             
             <motion.div 
@@ -131,21 +132,21 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <Button 
-                className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full h-auto"
+                className="bg-accent hover:bg-accent/90 text-white font-medium px-8 py-6 rounded-full h-auto hover-pulse neon-glow-pink"
                 onClick={() => handleNavClick("#register")}
               >
                 Register Now
               </Button>
               <Button 
                 variant="outline" 
-                className="bg-white/10 text-white border-white/30 hover:bg-white/20 px-8 py-6 rounded-full h-auto"
+                className="border-primary text-primary hover:bg-primary/10 px-8 py-6 rounded-full h-auto hover-float neon-glow"
                 onClick={() => handleNavClick("#schedule")}
               >
                 View Schedule
               </Button>
               <Button 
                 variant="outline" 
-                className="bg-white/10 text-white border-white/30 hover:bg-white/20 px-8 py-6 rounded-full h-auto"
+                className="border-secondary text-secondary hover:bg-secondary/10 px-8 py-6 rounded-full h-auto hover-float neon-glow-purple"
                 onClick={() => handleNavClick("#events")}
               >
                 Event Highlights

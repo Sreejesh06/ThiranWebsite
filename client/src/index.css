@@ -3,62 +3,62 @@
 @tailwind utilities;
 
 :root {
-  /* Neon theme colors */
-  --background: 240 60% 3%;
-  --foreground: 210 40% 98%;
-  --muted: 240 50% 10%;
-  --muted-foreground: 180 80% 80%;
-  --popover: 240 60% 5%;
-  --popover-foreground: 210 40% 98%;
-  --card: 240 60% 7%;
-  --card-foreground: 210 40% 98%;
-  --border: 180 80% 60%;
-  --input: 240 50% 15%;
-  --primary: 180 100% 50%; /* Cyan neon */
-  --primary-foreground: 240 60% 3%;
-  --secondary: 300 100% 50%; /* Magenta neon */
-  --secondary-foreground: 210 40% 98%;
-  --accent: 310 100% 60%; /* Hot pink neon */
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 100% 50%;
-  --destructive-foreground: 210 40% 98%;
-  --ring: 180 100% 50%;
+  /* Dark neon theme colors */
+  --background: 235 80% 5%; /* Deep rich black with slight blue tint */
+  --foreground: 0 0% 95%;
+  --muted: 235 70% 10%;
+  --muted-foreground: 180 90% 85%;
+  --popover: 235 80% 5%;
+  --popover-foreground: 0 0% 95%;
+  --card: 235 70% 7%;
+  --card-foreground: 0 0% 95%;
+  --border: 195 100% 60%;
+  --input: 235 70% 10%;
+  --primary: 195 100% 60%; /* Bright teal/cyan */
+  --primary-foreground: 235 80% 5%;
+  --secondary: 280 100% 65%; /* Vibrant purple */
+  --secondary-foreground: 0 0% 95%;
+  --accent: 325 100% 65%; /* Vibrant pink */
+  --accent-foreground: 0 0% 95%;
+  --destructive: 0 100% 60%;
+  --destructive-foreground: 0 0% 95%;
+  --ring: 195 100% 60%;
   --radius: 0.5rem;
   
   /* Custom colors */
-  --background-light: 240 50% 10%;
-  --text-primary: 180 100% 50%; /* Cyan neon text */
-  --dark-bg: 240 60% 3%;
+  --background-light: 235 70% 10%;
+  --text-primary: 195 100% 60%; /* Bright teal/cyan text */
+  --dark-bg: 235 80% 5%;
   
   /* Chart colors */
-  --chart-1: 180 100% 50%; /* Cyan */
-  --chart-2: 300 100% 50%; /* Magenta */
-  --chart-3: 310 100% 60%; /* Hot pink */
-  --chart-4: 120 100% 50%; /* Green */
-  --chart-5: 60 100% 50%;  /* Yellow */
+  --chart-1: 195 100% 60%; /* Bright teal/cyan */
+  --chart-2: 280 100% 65%; /* Vibrant purple */
+  --chart-3: 325 100% 65%; /* Vibrant pink */
+  --chart-4: 140 100% 60%; /* Neon green */
+  --chart-5: 50 100% 60%;  /* Neon yellow */
 }
 
 .dark {
-  /* Same neon theme for dark mode */
-  --background: 240 60% 3%;
-  --foreground: 210 40% 98%;
-  --muted: 240 50% 10%;
-  --muted-foreground: 180 80% 80%;
-  --popover: 240 60% 5%;
-  --popover-foreground: 210 40% 98%;
-  --card: 240 60% 7%;
-  --card-foreground: 210 40% 98%;
-  --border: 180 80% 60%;
-  --input: 240 50% 15%;
-  --primary: 180 100% 50%; /* Cyan neon */
-  --primary-foreground: 240 60% 3%;
-  --secondary: 300 100% 50%; /* Magenta neon */
-  --secondary-foreground: 210 40% 98%;
-  --accent: 310 100% 60%; /* Hot pink neon */
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 100% 50%;
-  --destructive-foreground: 210 40% 98%;
-  --ring: 180 100% 50%;
+  /* Same as the root theme since we're already using a dark neon theme */
+  --background: 235 80% 5%; /* Deep rich black with slight blue tint */
+  --foreground: 0 0% 95%;
+  --muted: 235 70% 10%;
+  --muted-foreground: 180 90% 85%;
+  --popover: 235 80% 5%;
+  --popover-foreground: 0 0% 95%;
+  --card: 235 70% 7%;
+  --card-foreground: 0 0% 95%;
+  --border: 195 100% 60%;
+  --input: 235 70% 10%;
+  --primary: 195 100% 60%; /* Bright teal/cyan */
+  --primary-foreground: 235 80% 5%;
+  --secondary: 280 100% 65%; /* Vibrant purple */
+  --secondary-foreground: 0 0% 95%;
+  --accent: 325 100% 65%; /* Vibrant pink */
+  --accent-foreground: 0 0% 95%;
+  --destructive: 0 100% 60%;
+  --destructive-foreground: 0 0% 95%;
+  --ring: 195 100% 60%;
 }
 
 @layer base {
@@ -155,17 +155,44 @@
     transform: rotateY(180deg);
   }
   
-  /* Neon glow effect */
+  /* Neon glow effects with improved visibility */
   .neon-glow {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
-                0 0 20px rgba(0, 255, 255, 0.5),
-                0 0 30px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 5px rgba(20, 230, 245, 0.8),
+                0 0 10px rgba(20, 230, 245, 0.6),
+                0 0 15px rgba(20, 230, 245, 0.4),
+                0 0 25px rgba(20, 230, 245, 0.2);
+  }
+  
+  .neon-glow-purple {
+    box-shadow: 0 0 5px rgba(190, 75, 255, 0.8),
+                0 0 10px rgba(190, 75, 255, 0.6),
+                0 0 15px rgba(190, 75, 255, 0.4),
+                0 0 25px rgba(190, 75, 255, 0.2);
+  }
+  
+  .neon-glow-pink {
+    box-shadow: 0 0 5px rgba(255, 60, 180, 0.8),
+                0 0 10px rgba(255, 60, 180, 0.6),
+                0 0 15px rgba(255, 60, 180, 0.4),
+                0 0 25px rgba(255, 60, 180, 0.2);
   }
   
   .neon-text {
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7),
-                 0 0 10px rgba(0, 255, 255, 0.5),
-                 0 0 15px rgba(0, 255, 255, 0.3);
+    text-shadow: 0 0 5px rgba(20, 230, 245, 0.8),
+                 0 0 10px rgba(20, 230, 245, 0.6),
+                 0 0 15px rgba(20, 230, 245, 0.4);
+  }
+  
+  .neon-text-purple {
+    text-shadow: 0 0 5px rgba(190, 75, 255, 0.8),
+                 0 0 10px rgba(190, 75, 255, 0.6),
+                 0 0 15px rgba(190, 75, 255, 0.4);
+  }
+  
+  .neon-text-pink {
+    text-shadow: 0 0 5px rgba(255, 60, 180, 0.8),
+                 0 0 10px rgba(255, 60, 180, 0.6),
+                 0 0 15px rgba(255, 60, 180, 0.4);
   }
   
   /* Hover animation - float effect */
@@ -242,12 +269,19 @@
     height: 3px;
     background: hsl(var(--primary));
     box-shadow: 
-      0 0 5px rgba(0, 255, 255, 0.5),
-      0 0 10px rgba(0, 255, 255, 0.3);
+      0 0 5px rgba(20, 230, 245, 0.7),
+      0 0 10px rgba(20, 230, 245, 0.5),
+      0 0 15px rgba(20, 230, 245, 0.3);
     transition: width 0.3s ease, left 0.3s ease;
   }
   
   .nav-link:hover::after {
+    width: 80%;
+    left: 10%;
+  }
+  
+  /* Additional animation for better UX */
+  .nav-link-active::after {
     width: 80%;
     left: 10%;
   }
