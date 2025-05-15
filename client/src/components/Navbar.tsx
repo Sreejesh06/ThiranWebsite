@@ -55,10 +55,10 @@ export default function Navbar() {
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-            <span className="font-montserrat font-bold text-2xl">
+        <Link href="/" className="flex items-center gap-2 hover-float">
+            <span className="font-montserrat font-bold text-2xl neon-text text-primary">
               THIRAN
-              <span className="text-accent">2026</span>
+              <span className="text-accent neon-text">2026</span>
             </span>
         </Link>
 
@@ -72,7 +72,7 @@ export default function Navbar() {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className="text-sm font-medium hover:text-accent transition-colors"
+              className="text-sm font-medium text-white hover:text-primary transition-colors px-3 py-2 relative neon-border hover-pulse"
             >
               {link.name}
             </a>

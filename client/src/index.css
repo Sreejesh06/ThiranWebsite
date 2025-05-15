@@ -3,60 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 222 47% 11%;
-  --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --primary: 222 47% 11%; /* #2B2D42 */
-  --primary-foreground: 210 40% 98%;
-  --secondary: 219 14% 63%; /* #8D99AE */
-  --secondary-foreground: 222 47% 11%;
-  --accent: 355 78% 54%; /* #EF233C */
+  /* Neon theme colors */
+  --background: 240 60% 3%;
+  --foreground: 210 40% 98%;
+  --muted: 240 50% 10%;
+  --muted-foreground: 180 80% 80%;
+  --popover: 240 60% 5%;
+  --popover-foreground: 210 40% 98%;
+  --card: 240 60% 7%;
+  --card-foreground: 210 40% 98%;
+  --border: 180 80% 60%;
+  --input: 240 50% 15%;
+  --primary: 180 100% 50%; /* Cyan neon */
+  --primary-foreground: 240 60% 3%;
+  --secondary: 300 100% 50%; /* Magenta neon */
+  --secondary-foreground: 210 40% 98%;
+  --accent: 310 100% 60%; /* Hot pink neon */
   --accent-foreground: 210 40% 98%;
   --destructive: 0 100% 50%;
   --destructive-foreground: 210 40% 98%;
-  --ring: 215 20.2% 65.1%;
+  --ring: 180 100% 50%;
   --radius: 0.5rem;
   
   /* Custom colors */
-  --background-light: 216 33% 97%; /* #EDF2F4 */
-  --text-primary: 222 47% 11%; /* #2B2D42 */
-  --dark-bg: 240 10% 14%; /* #1E1E24 */
+  --background-light: 240 50% 10%;
+  --text-primary: 180 100% 50%; /* Cyan neon text */
+  --dark-bg: 240 60% 3%;
   
   /* Chart colors */
-  --chart-1: 222 47% 11%;
-  --chart-2: 219 14% 63%;
-  --chart-3: 355 78% 54%;
-  --chart-4: 216 33% 97%;
-  --chart-5: 210 40% 96.1%;
+  --chart-1: 180 100% 50%; /* Cyan */
+  --chart-2: 300 100% 50%; /* Magenta */
+  --chart-3: 310 100% 60%; /* Hot pink */
+  --chart-4: 120 100% 50%; /* Green */
+  --chart-5: 60 100% 50%;  /* Yellow */
 }
 
 .dark {
-  --background: 240 10% 14%; 
-  --foreground: 0 0% 98%;
-  --muted: 240 3.7% 15.9%;
-  --muted-foreground: 240 5% 64.9%;
-  --popover: 240 10% 3.9%;
-  --popover-foreground: 0 0% 98%;
-  --card: 240 10% 3.9%;
-  --card-foreground: 0 0% 98%;
-  --border: 240 3.7% 15.9%;
-  --input: 240 3.7% 15.9%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 240 5.9% 10%;
-  --secondary: 240 3.7% 15.9%;
-  --secondary-foreground: 0 0% 98%;
-  --accent: 355 78% 54%;
-  --accent-foreground: 0 0% 98%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 98%;
-  --ring: 240 4.9% 83.9%;
+  /* Same neon theme for dark mode */
+  --background: 240 60% 3%;
+  --foreground: 210 40% 98%;
+  --muted: 240 50% 10%;
+  --muted-foreground: 180 80% 80%;
+  --popover: 240 60% 5%;
+  --popover-foreground: 210 40% 98%;
+  --card: 240 60% 7%;
+  --card-foreground: 210 40% 98%;
+  --border: 180 80% 60%;
+  --input: 240 50% 15%;
+  --primary: 180 100% 50%; /* Cyan neon */
+  --primary-foreground: 240 60% 3%;
+  --secondary: 300 100% 50%; /* Magenta neon */
+  --secondary-foreground: 210 40% 98%;
+  --accent: 310 100% 60%; /* Hot pink neon */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 180 100% 50%;
 }
 
 @layer base {
@@ -74,12 +76,15 @@
 }
 
 @layer components {
+  /* Neon glassmorphism */
   .glassmorphism {
-    @apply bg-white/15 backdrop-blur-md border border-white/10;
+    @apply bg-black/50 backdrop-blur-md border border-primary/30;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
   }
   
   .dark .glassmorphism {
-    @apply bg-black/30 border-white/5;
+    @apply bg-black/50 border-primary/30;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
   }
   
   /* Parallax effect */
@@ -92,7 +97,7 @@
   
   /* Gradient text */
   .gradient-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary;
   }
   
   /* Section spacing */
@@ -102,16 +107,18 @@
   
   /* Section title styling */
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4;
+    @apply text-3xl md:text-4xl font-bold mb-4 text-primary;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
   }
   
   .section-subtitle {
-    @apply text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10;
+    @apply text-white max-w-2xl mx-auto mb-10;
   }
   
   /* Timeline styling */
   .timeline-bar {
-    @apply absolute h-full w-1 bg-secondary/30 left-4 md:left-6 top-0;
+    @apply absolute h-full w-1 bg-secondary/50 left-4 md:left-6 top-0;
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
   }
   
   /* Masonry grid for gallery */
@@ -146,5 +153,77 @@
   
   .flip-card-back {
     transform: rotateY(180deg);
+  }
+  
+  /* Neon glow effect */
+  .neon-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7),
+                0 0 20px rgba(0, 255, 255, 0.5),
+                0 0 30px rgba(0, 255, 255, 0.3);
+  }
+  
+  .neon-text {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7),
+                 0 0 10px rgba(0, 255, 255, 0.5),
+                 0 0 15px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* Hover animation - float effect */
+  .hover-float {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-float:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Hover animation - pulse glow */
+  .hover-pulse {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-pulse:hover {
+    animation: pulse-glow 1.5s infinite alternate;
+  }
+  
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 255, 255, 0.7),
+                  0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.9),
+                  0 0 30px rgba(0, 255, 255, 0.5);
+    }
+  }
+  
+  /* Neon border animation */
+  .neon-border {
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+  }
+  
+  .neon-border:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);
+    animation: neon-border-animation 3s linear infinite;
+  }
+  
+  @keyframes neon-border-animation {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 }
