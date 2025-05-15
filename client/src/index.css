@@ -226,4 +226,29 @@
       left: 100%;
     }
   }
+  
+  /* Neon stick hover animation */
+  .nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: hsl(var(--primary));
+    box-shadow: 
+      0 0 5px rgba(0, 255, 255, 0.5),
+      0 0 10px rgba(0, 255, 255, 0.3);
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 80%;
+    left: 10%;
+  }
 }

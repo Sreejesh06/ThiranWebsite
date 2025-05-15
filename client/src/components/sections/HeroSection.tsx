@@ -86,18 +86,18 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              THIRAN <span className="text-accent">2026</span>
+              <span className="text-primary neon-text">THIRAN</span> <span className="text-accent neon-text">2026</span>
             </motion.h1>
             
             <motion.div 
-              className="w-24 h-1 bg-accent mx-auto lg:mx-0 mb-8"
+              className="w-24 h-1 bg-primary mx-auto lg:mx-0 mb-8 neon-glow"
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             ></motion.div>
             
             <motion.p 
-              className="text-xl md:text-2xl font-light text-white mb-6"
+              className="text-xl md:text-2xl font-light text-white mb-6 neon-text"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -106,7 +106,7 @@ export default function HeroSection() {
             </motion.p>
             
             <motion.div 
-              className="bg-white/10 backdrop-blur-md rounded-lg px-6 py-3 mb-8 inline-block"
+              className="glassmorphism rounded-lg px-6 py-3 mb-8 inline-block"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
