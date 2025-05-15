@@ -61,7 +61,7 @@ export default function ScheduleSection() {
               onClick={() => setActiveDay(1)}
             >
               <span className="block text-sm opacity-80">Day 1</span>
-              Feb 20, 2025
+              Feb 20, 2026
             </Button>
             <Button
               variant={activeDay === 2 ? "default" : "outline"}
@@ -71,7 +71,7 @@ export default function ScheduleSection() {
               onClick={() => setActiveDay(2)}
             >
               <span className="block text-sm opacity-80">Day 2</span>
-              Feb 21, 2025
+              Feb 21, 2026
             </Button>
             <Button
               variant={activeDay === 3 ? "default" : "outline"}
@@ -81,7 +81,7 @@ export default function ScheduleSection() {
               onClick={() => setActiveDay(3)}
             >
               <span className="block text-sm opacity-80">Day 3</span>
-              Feb 22, 2025
+              Feb 22, 2026
             </Button>
           </motion.div>
           

@@ -57,7 +57,7 @@ export default function AboutSection() {
               Thiran has established itself as a platform for young talents to showcase their skills in technology, arts, and sports. Since its inception, Thiran has grown exponentially in terms of participation, events, and scope.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              With over 5000+ participants from 100+ colleges across South India, Thiran 2025 promises to be a grand celebration of creativity, innovation, and athletic excellence. Join us for three days of exhilarating competitions, workshops, cultural performances, and sports events.
+              With over 5000+ participants from 100+ colleges across South India, Thiran 2026 promises to be a grand celebration of creativity, innovation, and athletic excellence. Join us for three days of exhilarating competitions, workshops, cultural performances, and sports events.
             </p>
             
             <div className="flex flex-wrap gap-4">

@@ -130,7 +130,7 @@ export default function SponsorsSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <p className="text-gray-600 dark:text-gray-300 mb-6">Interested in becoming a sponsor for Thiran 2025?</p>
+          <p className="text-gray-600 dark:text-gray-300 mb-6">Interested in becoming a sponsor for Thiran 2026?</p>
           <Button
             className="bg-accent hover:bg-accent/90 rounded-full px-8 py-6 h-auto"
           >
