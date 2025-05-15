@@ -87,7 +87,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <span className="text-primary neon-text">THIRAN</span> <span className="text-accent neon-text-pink">2026</span>
+              <span className="text-white neon-text">THIRAN</span> <span className="text-accent neon-text-pink">2026</span>
             </motion.h1>
             
             <motion.div 
