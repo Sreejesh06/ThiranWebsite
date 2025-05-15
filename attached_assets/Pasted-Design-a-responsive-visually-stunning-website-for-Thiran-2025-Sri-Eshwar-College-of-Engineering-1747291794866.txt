@@ -1,0 +1,158 @@
+Design a responsive, visually stunning website for "Thiran 2025" — Sri Eshwar College of Engineering’s flagship techno-cultural-sports fest. The site must support dark and light mode toggle, animated transitions, modern fonts, and colorful gradients. The theme should reflect energy, innovation, and festivity. Use rounded cards, neumorphic or glassmorphic UI elements, and add micro-interactions.
+
+🔥 1. Homepage (Hero Section)
+Prompt for Bolt:
+
+Design the homepage hero section for a college fest called Thiran 2025.
+
+Include: logo placeholder, tagline “Confluence of Talents”, dates (Feb 20–22, 2025), venue (Sri Eshwar College of Engineering, Coimbatore).
+
+Add background: blurred animated fest crowd with gradient overlay.
+
+Components: Light/Dark toggle, Register Now button, View Schedule, and Event Highlights.
+
+Include auto-slider with highlight photos or videos (use placeholders).
+
+Animated particle or abstract effect in the background.
+
+🧾 2. About Thiran
+Prompt:
+
+Build an “About Thiran” section.
+Layout: Two columns
+
+Left side: About text describing Thiran as one of South India’s biggest inter-college techno-cultural fests.
+
+Right side: Organizer's quote card with college logo and student crowd image.
+
+Add animated text on scroll.
+
+Use gradient border card style with smooth hover animations.
+
+🎭 3. Events Listing Page (All Events)
+Prompt:
+
+Design an Events page with category filters: Technical, Cultural, Sports, Workshops, Masterclasses.
+
+Each event should be shown as a card with icon, event name, brief detail, and “Know More” CTA.
+
+Filters should be toggleable (chips or tabs) with animation.
+
+Add hover effects and different accent colors per category (e.g., blue for Tech, red for Cultural).
+
+Should support both dark and light mode smoothly.
+
+📅 4. Schedule Page
+Prompt:
+
+Build an interactive schedule/timetable UI for a 3-day fest.
+
+Tabs for each day (Feb 20, 21, 22)
+
+Within each tab: Timeline view with time, event name, venue, type, and color-coded tags
+
+Option to filter by event type (Technical, Cultural, Sports)
+
+Sticky header with day/date tabs
+
+Smooth animation on day change
+
+Add icons and status indicators (Live, Upcoming, Done)
+
+🖼️ 5. Gallery Page
+Prompt:
+
+Design a stylish Gallery page.
+
+Include toggle filters: “All | Tech | Cultural | Celebs | Sports | Fun”
+
+Masonry-style grid layout
+
+On image hover: title + date overlay
+
+Add carousel/slider section for highlight videos
+
+Lightbox popup on image click
+
+Glassmorphic cards for section intro
+
+🌟 6. Celebrity Shows
+Prompt:
+
+Build a “Celebrity Shows” page for Thiran 2025
+
+Top: Hero banner with blurred crowd + spotlight effects
+
+Below: Performer cards (image, name, genre, short intro, and “Watch Recap” button)
+
+Use neon/glow borders for each performer card
+
+Add parallax scroll effect or spotlight animation for glam look
+
+CTA for “Book Pass” or “Evening Lineup”
+
+🧑‍🏫 7. Workshops & Masterclasses
+Prompt:
+
+Design a grid layout for listing Workshops & Masterclasses.
+
+Each card includes: Title (e.g., AI, Robotics, Cloud), Speaker Name, Duration, Registration CTA
+
+Hover: flip card with outcomes/benefits
+
+Use tech-themed icons and badges (Beginner/Expert)
+
+Animated floating icons like code, circuit, cloud as background decor
+
+🏆 8. Results & Achievements
+Prompt:
+
+Create a “Results & Achievements” page
+
+Section 1: Tabs for “Winners”, “Project Expo Highlights”, “Innovative Ideas”, “SDG Impact”
+
+Winners table with event, rank, team/individual, college
+
+Gallery for standout project posters
+
+Add Certificate Download button for each event
+
+Animated trophy or leaderboard chart
+
+🤝 9. Sponsors & Partners
+Prompt:
+
+Build a sponsors section
+
+Sections: Title Sponsor, Gold, Silver, Associate Partners
+
+Display logos in responsive grids with tooltip hover for short sponsor intros
+
+Animated transitions or horizontal scroll
+
+Footer strip with “Powered by”, “Supported by” badges
+
+📞 10. Contact & FAQs Page
+Prompt:
+
+Design a Contact & FAQ section
+
+Left: Contact Form (Name, Email, Message)
+
+Right: Organizer Contact Cards with profile pics, name, phone, role
+
+Below: Google Map of campus + travel info
+
+Add toggle FAQ accordion: questions on registration, travel, stay, rules
+
+🧭 11. Navbar & Footer
+Prompt:
+
+Build a floating/sticky top navigation bar and footer
+Navbar: links to Home, About, Events, Schedule, Gallery, Celebs, Workshops, Results, Sponsors, Contact
+
+Add light/dark mode toggle switch with animation
+
+Footer: Social icons, copyright, newsletter signup, college address
+
+Animated scroll-to-top button
