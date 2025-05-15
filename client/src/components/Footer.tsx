@@ -172,15 +172,11 @@ export default function Footer() {
               &copy; 2024 Thiran 2026 | Sri Eshwar College of Engineering. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm">
-              <Link href="/privacy">
-                <a className="text-gray-400 hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
+              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                Privacy Policy
               </Link>
-              <Link href="/terms">
-                <a className="text-gray-400 hover:text-white transition-colors">
-                  Terms of Service
-                </a>
+              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                Terms of Service
               </Link>
             </div>
           </div>
