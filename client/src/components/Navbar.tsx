@@ -55,13 +55,11 @@ export default function Navbar() {
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
             <span className="font-montserrat font-bold text-2xl">
               THIRAN
-              <span className="text-accent">2025</span>
+              <span className="text-accent">2026</span>
             </span>
-          </a>
         </Link>
 
         {/* Desktop Navigation */}

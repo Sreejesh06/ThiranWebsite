@@ -86,7 +86,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              THIRAN <span className="text-accent">2025</span>
+              THIRAN <span className="text-accent">2026</span>
             </motion.h1>
             
             <motion.div 
@@ -114,7 +114,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-white">
                 <div className="flex items-center">
                   <Calendar className="w-4 h-4 mr-2" />
-                  <span className="font-semibold">February 20-22, 2025</span>
+                  <span className="font-semibold">February 20-22, 2026</span>
                 </div>
                 <div className="hidden sm:block h-5 w-px bg-white/30"></div>
                 <div className="flex items-center">
